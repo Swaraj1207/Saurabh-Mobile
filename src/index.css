@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-black antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+@layer utilities {
+  .border-editorial {
+    @apply border border-black;
+  }
+
+  .border-editorial-b {
+    @apply border-b border-black;
+  }
+
+  .border-editorial-t {
+    @apply border-t border-black;
+  }
+
+  .border-editorial-x {
+    @apply border-x border-black;
+  }
+
+  .border-editorial-y {
+    @apply border-y border-black;
+  }
+
+  .img-zoom {
+    @apply transition-transform duration-[2000ms] ease-out hover:scale-105;
+  }
+}

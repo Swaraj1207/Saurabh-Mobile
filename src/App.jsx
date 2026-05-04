@@ -14,7 +14,7 @@ import { CartProvider } from './utils/cartContext'
 export default function App() {
   return (
     <CartProvider>
-      <div className="min-h-screen bg-white text-black font-sans selection:bg-black selection:text-white">
+      <div className="min-h-screen bg-black text-white font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
